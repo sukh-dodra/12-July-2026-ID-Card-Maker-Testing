@@ -1,3 +1,50 @@
-body { background-color: #f8f9fa; }
-.preview-box { border: 2px dashed #ccc; background: #fff; min-height: 200px; }
-/* ਵੀਡੀਓ ਮੁਤਾਬਿਕ ਹੋਰ ਡਿਜ਼ਾਈਨ ਕੋਡ */
+/* style.css (GitHub 'ਤੇ ਅਪਲੋਡ ਕਰੋ) */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+}
+
+.app-frame {
+    display: flex;
+    height: 100vh;
+}
+
+#sidebar-nav {
+    width: 250px;
+    background-color: #fff;
+    border-right: 1px solid #dee2e6;
+    padding-top: 20px;
+}
+
+#main-content-area {
+    flex: 1;
+    padding: 30px;
+    overflow-y: auto;
+}
+
+/* ਸਾਈਡਬਾਰ ਦੇ ਮੀਨੂ ਆਈਟਮਾਂ ਦਾ ਡਿਜ਼ਾਈਨ */
+.nav-link {
+    color: #333;
+    padding: 10px 20px;
+    margin: 5px 10px;
+    cursor: pointer;
+}
+.nav-link:hover, .nav-link.active {
+    background-color: #e8f0fe;
+    color: #1a73e8;
+    font-weight: bold;
+}
+
+/* ਵੀਡੀਓ ਮੁਤਾਬਿਕ ਹੋਰ ਡਿਜ਼ਾਈਨ ਕੋਡ (ਜਿਵੇਂ ਕਾਰਡ, ਫੋਟੋ ਐਡੀਟਰ, ਆਦਿ) */
+.tool-section {
+    display: none; /* ਡਿਫਾਲਟ ਸਾਰੇ ਲੁਕੇ ਹੋਣ */
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.tool-section.active {
+    display: block; /* ਸਿਰਫ਼ ਐਕਟਿਵ ਸੈਕਸ਼ਨ ਦਿਖੇ */
+}

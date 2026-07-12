@@ -1,67 +1,30 @@
-/* style.css (GitHub 'ਤੇ ਪੂਰੀ ਤਰ੍ਹਾਂ ਰਿਪਲੇਸ ਕਰੋ) */
-
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f0f2f5;
-  margin: 0;
-  padding: 0;
 }
-
-.app-frame {
-  display: flex;
-  height: 100vh;
-  overflow: hidden;
-}
-
-#sidebar-nav {
-  width: 260px;
-  background-color: #ffffff;
-  border-right: 1px solid #e4e6eb;
-  display: flex;
-  flex-direction: column;
-  padding-top: 10px;
-  box-shadow: 2px 0 10px rgba(0,0,0,0.02);
-}
-
-#sidebar-nav .nav-link {
+.nav-link {
   color: #4b4f56;
   font-weight: 600;
   padding: 12px 20px;
   margin: 4px 12px;
   border-radius: 8px;
-  cursor: pointer;
   transition: all 0.2s ease;
-  display: flex;
-  align-items: center;
+  cursor: pointer;
 }
-
-#sidebar-nav .nav-link:hover {
+.nav-link:hover {
   background-color: #f2f3f5;
   color: #1877f2;
 }
-
-#sidebar-nav .nav-link.active {
+.nav-link.active {
   background-color: #e7f3ff;
   color: #1877f2;
 }
-
-#main-content-area {
-  flex: 1;
-  padding: 30px;
-  overflow-y: auto;
-  background-color: #f7f8fa;
-}
-
-.preview-box {
-  border: 2px dashed #cbd5e1 !important;
-  background-color: #ffffff !important;
-}
-
 .tab-content {
   animation: fadeIn 0.3s ease-in-out;
 }
-
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(5px); }
+  from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
+}
+.card {
+  border-radius: 12px;
 }
